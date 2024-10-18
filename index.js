@@ -1,11 +1,11 @@
 const express = require('express');
-const cors = require('cors');
-const { resolve } = require('path');
-
+const cors = require('cors'); // Import CORS
 const app = express();
 const port = 3000;
 
+// Allow cross-origin requests
 app.use(cors());
+
 
 let stocks = [
   {
